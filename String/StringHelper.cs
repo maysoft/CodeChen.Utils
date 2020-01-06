@@ -2,8 +2,6 @@
 {
 	public class StringHelper
 	{ 
-		public int Str2Int() { return 1; } 
-
-		cc
+		public int Str2Int() { return 1; }  
 	}
 }
