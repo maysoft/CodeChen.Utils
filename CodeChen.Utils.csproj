@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="String\" />
     <Folder Include="Image\" />
     <Folder Include="DateTime\" />
     <Folder Include="Encypt\" />
