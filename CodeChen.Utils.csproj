@@ -5,8 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Image\" />
-    <Folder Include="DateTime\" />
+    <Compile Remove="DateTime\**" />
+    <Compile Remove="Image\**" />
+    <EmbeddedResource Remove="DateTime\**" />
+    <EmbeddedResource Remove="Image\**" />
+    <None Remove="DateTime\**" />
+    <None Remove="Image\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Encypt\" />
   </ItemGroup>
 
