@@ -4,6 +4,6 @@
 	{ 
 		public int Str2Int() { return 1; } 
 
-		
+		cc
 	}
 }
