@@ -2,7 +2,7 @@
 {
 	public class StringHelper
 	{
-		public string Str2Int() { return "w"; }
+		public string Str2Int() { return "ww"; }
 		
 	}
 }
