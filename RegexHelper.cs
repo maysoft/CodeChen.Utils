@@ -4,7 +4,8 @@ using System.Text;
 
 namespace CodeChen.Utils
 {
-	class RegexHelper
+	public static class RegexHelper
 	{
+
 	}
 }

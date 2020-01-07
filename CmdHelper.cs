@@ -4,7 +4,7 @@ namespace CodeChen.Utils
 {
 	public class CmdHelper
 	{
-		public static string Executed(string command)
+		public static string RunCmd(string command)
 		{
 			Process p = new Process();//创建进程对象
 			ProcessStartInfo startInfo = new ProcessStartInfo();
