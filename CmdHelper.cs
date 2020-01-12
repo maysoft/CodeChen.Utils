@@ -4,6 +4,11 @@ namespace CodeChen.Utils
 {
 	public class CmdHelper
 	{
+		/// <summary>
+		/// 执行CMD命令
+		/// </summary>
+		/// <param name="command"></param>
+		/// <returns></returns>
 		public static string RunCmd(string command)
 		{
 			Process p = new Process();//创建进程对象
@@ -22,6 +27,6 @@ namespace CodeChen.Utils
 							//string output2 = p.StandardOutput.ReadToEnd();//获取cmd窗口的输出信息 
 			p.Close();//结束  
 			return output;
-		}
+		} 
 	}
 }

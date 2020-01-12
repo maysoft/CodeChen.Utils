@@ -4,6 +4,16 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Projects\Repos\douyin\CodeChen.Utils\CodeChen.Utils.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Projects\Repos\douyin\CodeChen.Utils\CodeChen.Utils.xml</DocumentationFile>
+    <DefineConstants />
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="DateTime\**" />
     <Compile Remove="Image\**" />
@@ -19,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Encypt\" />
+    <Folder Include="Encrypt\" />
   </ItemGroup>
 
 </Project>

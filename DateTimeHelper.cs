@@ -1,9 +1,23 @@
-﻿namespace CodeChen.Utils
+﻿using System;
+
+namespace CodeChen.Utils
 {
 	public static class DateTimeHelper
 	{
+		private static readonly DateTime Start1970 = DateTime.Parse("1970-01-01 00:00:00");
+
 		/// <summary>
-		/// 秒数转为时分秒（00:00:10） 格式
+		/// 获取该时间相对于1970-01-01 00:00:00的毫秒数时间戳
+		/// </summary>
+		/// <param name="dt"></param>
+		/// <returns></returns>
+		public static double GetTotalMilliseconds(this DateTime dt)
+		{
+			return (dt - Start1970).TotalMilliseconds;
+		}
+
+		/// <summary>
+		/// 秒数 转为时分秒（00:00:10） 格式
 		/// </summary>
 		/// <param name="second"></param>
 		/// <returns></returns>
